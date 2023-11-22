@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "696974931043",
+    "firebase_url": "https://chitchat-bc80f-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "chitchat-bc80f",
+    "storage_bucket": "chitchat-bc80f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696974931043:android:2a2a9953ce9e872a1b3456",
+        "android_client_info": {
+          "package_name": "com.example.chitchat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAmwzeEXBUooNZO_sJosPUnKFFxp_VgeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
