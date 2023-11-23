@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">WaveLink</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_confirm_password">Confirm Password</string>
+
+    <string name="label_signup">Sign Up</string>
+    <string name="label_signin">Sign In</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_signup">Sign Up</string>
+
+
+    <string name="title_activity_home_page">HomePage</string>
+
+
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
 </resources>
