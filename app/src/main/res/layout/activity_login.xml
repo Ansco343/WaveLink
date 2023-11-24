@@ -10,7 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/label_signup"
+        android:text="@string/label_signin"
         android:textStyle="bold"
         android:layout_marginStart="15dp"
         android:layout_marginBottom="10dp"
@@ -22,19 +22,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="15dp"
-        android:inputType="text"
-        android:fontFamily="@font/courier_prime"
-        android:background="@color/colorTextBackground"
-        android:hint="@string/enter_name"
-        android:padding="12dp"
-        android:textColor="@color/colorText" />
 
     <EditText
         android:id="@+id/etEmail"
@@ -64,37 +51,27 @@
         android:padding="12dp"
         android:textColor="@color/colorText" />
 
-    <EditText
-        android:id="@+id/etConfirmPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/courier_prime"
-        android:layout_marginStart="15dp"
-        android:inputType="textPassword"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="15dp"
-        android:background="@color/colorTextBackground"
-        android:hint="@string/enter_confirm_password"
-        android:padding="12dp"
-        android:textColor="@color/colorText" />
 
-    <Button
-        android:id="@+id/btnSignUp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:layout_margin="15dp"
-        android:textColor="@color/colorAccent"
-        android:text="@string/btn_signup"/>
 
     <Button
         android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginEnd="2dp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/btn_login"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:background="@color/colorDarkGray"
         android:textColor="@color/colorAccent"
-        android:text="@string/btn_login"/>
+        android:text="@string/btn_signup"/>
+
 
 </LinearLayout>

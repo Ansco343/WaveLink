@@ -1,7 +1,8 @@
-package com.example.chitchat
+package com.example.chitchat.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.chitchat.R
 
 class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

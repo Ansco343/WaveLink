@@ -54,4 +54,10 @@ dependencies {
 
     implementation(platform("com.google.firebase:firebase-bom:32.5.0"))
     implementation("com.google.firebase:firebase-database-ktx:20.3.0")
+
+    //material design lib
+    implementation("com.google.com.material:material:1.2.0")
+
+    //Circle image view lib
+    implementation("de.hdodenhof:circleimageview:3.1.0")
 }

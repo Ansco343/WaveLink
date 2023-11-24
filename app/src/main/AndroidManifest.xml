@@ -13,7 +13,19 @@
         android:theme="@style/Theme.ChitChat"
         tools:targetApi="31">
         <activity
-            android:name=".SignUpActivity"
+            android:name=".activity.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".HomePage"
