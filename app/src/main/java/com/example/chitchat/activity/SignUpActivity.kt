@@ -42,10 +42,12 @@ class SignUpActivity : AppCompatActivity() {
         butonSignUp = findViewById(R.id.butonSignUp)
 
         butonSignUp.setOnClickListener {
-            val userName = etUserName.text.toString()
-            val email = etEmail.text.toString()
-            val password = etPassword.text.toString()
-            val confirmPassword = etPasswordConfirm.text.toString()
+            val userName : String = etUserName.text.toString()
+            val email : String = etEmail.toString()
+            val password : String = etPassword.text.toString()
+            val confirmPassword : String = etPasswordConfirm.text.toString()
+
+
 
             if (TextUtils.isEmpty(userName)){
                 Toast.makeText(applicationContext,"username is required",Toast.LENGTH_SHORT).show()
@@ -62,7 +64,7 @@ class SignUpActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext,"confirm password is required",Toast.LENGTH_SHORT).show()
             }
 
-            if (!password.equals(confirmPassword)){
+            if (password != confirmPassword){
                 Toast.makeText(applicationContext,"password not match",Toast.LENGTH_SHORT).show()
             }
             registerUser(userName,email,password)
