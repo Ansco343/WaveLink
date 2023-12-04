@@ -9,13 +9,11 @@ import android.widget.EditText
 import android.widget.Toast
 import com.example.chitchat.R
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
-    private lateinit var firebaseUser: FirebaseUser
     private lateinit var emailText: EditText
     private lateinit var passwordText: EditText
     private lateinit var loginButton: Button
@@ -32,15 +30,6 @@ class LoginActivity : AppCompatActivity() {
         loginButton = findViewById(R.id.btnLogin)
         signupButton = findViewById(R.id.btnSignUp)
 
-        //check if user login then navigate to user screen
-        if (firebaseUser != null) {
-            val intent = Intent(
-                this@LoginActivity,
-                UsersActivity::class.java
-            )
-            startActivity(intent)
-            finish()
-        }
 
 
         loginButton.setOnClickListener {
@@ -58,6 +47,7 @@ class LoginActivity : AppCompatActivity() {
 
                         val intent = Intent(this@LoginActivity, UsersActivity::class.java)
                         startActivity(intent)
+                        finish()
 
                     } else {
                         Toast.makeText(applicationContext, "Email or Password invalid", Toast.LENGTH_SHORT).show()
@@ -72,7 +62,7 @@ class LoginActivity : AppCompatActivity() {
 
             val intent = Intent(this@LoginActivity, SignUpActivity::class.java)
             startActivity(intent)
-
+            finish()
         }
 
 
